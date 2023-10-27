@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condo Connect Login</title>
+    <link rel="stylesheet" href="../css/Index-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="logo">
+        <img class="logo-img" src="../img/Logo-3.jpg" alt="">
+    </header>
+
+    <section>
+        <form>
+            <div class="login">
+                <h1>Login</h1>
+                <div class="aviso" id="aviso">Faltam informações corretas!</div>
+                <div class="boxes">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="boxes">
+                    <input type="password" placeholder="Senha" id="senha" required>
+                    <i id="Versenha" class='bx bxs-low-vision'></i>
+                </div>
+
+                <div class="Lembrar-Esqueceu">
+                    <label><input type="checkbox">Lembre-me</label>
+                    <a href="./Senha.html">Esqueci a senha</a>
+                </div>
+
+                <button type="submit" class="bot" onclick="entrar(); return false">Login</button>
+
+                <div class="Registro">
+                    <p>Não tem cadastro?
+                    <a href="../html/Cadastro.html">Registrar-se</a></p>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="../Js/Index-script.js"></script>
+</body>
+</html>

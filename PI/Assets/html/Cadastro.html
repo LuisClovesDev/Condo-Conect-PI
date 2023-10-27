@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condo Connect Cadastro</title>
+    <link rel="stylesheet" href="../css/Cadastro-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="logo">
+        <img class="logo-img" src="../img/Logo-2.jpg" alt="">
+    </header>
+
+    <section>
+        <form>
+            <div class="Cadastro">
+                <h1>Cadastro</h1>
+                <div class="aviso" id="aviso">Faltam informações corretas!</div>
+                <div class="boxes">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <label id="labelusername" for="username"></label>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="boxes">
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+
+                <div class="boxes">
+                    <input type="password" placeholder="Senha" id="Senha" required>
+                    <i id="Versenha" class='bx bxs-low-vision'></i>
+                </div>
+
+                <div class="boxes">
+                    <input type="password" placeholder="Confirmar Senha" id="ConfSenha" required>
+                    <label id="labelconfsenha" for="ConfSenha"></label>
+                    <i id="Verconfsenha" class='bx bxs-low-vision'></i>
+                </div>
+
+                <div class="boxes">
+                    <input type="tel" placeholder="Telefone: Ex.: (99)999999999" id="Telefone" required>
+                    <label id="labeltelefone" for="Telefone"></label>
+                    <i class='bx bxs-phone'></i>
+                </div>
+
+                <button type="submit" class="bot" onclick="Cadastrar(); return false">Cadastrar-se</button>
+            </div>
+        </form>
+    </section>
+    <script src="../Js/Cadastro-script.js"></script>
+</body>
+</html>
